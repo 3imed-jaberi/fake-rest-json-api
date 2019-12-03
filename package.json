@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "npm i",
     "useJSON": "json-server --watch db.json",
-    "useModel": "json-server",
+    "useModel": "json-server -p 4444",
     "useDefaultModel": "npm run useModel index.js"
   },
   "repository": {
