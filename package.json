@@ -1,11 +1,11 @@
 {
   "name": "fake-rest-json-api",
-  "version": "1.0.0",
+  "version": "2.0.0-rc",
   "description": "Fake REST API for testing 🧶 .. ",
   "main": "index.js",
   "scripts": {
-    "setup": "npm i",
-    "useJSON": "json-server --watch db.json",
+    "useJSON": "json-server -p 4444 --watch",
+    "useDefaultJSON": "npm run useJSON db.json",
     "useModel": "json-server -p 4444",
     "useDefaultModel": "npm run useModel index.js"
   },
@@ -13,16 +13,18 @@
     "type": "git",
     "url": "git@github.com:3imed-jaberi/fake-rest-json-api.git"
   },
-  "author": "imed jaberi  <imed_jebari@hotmail.fr> (https://github.com/3imed-jaberi)",
+  "author": {
+    "name": "Imed Jaberi",
+    "email": "imed_jebari@hotmail.fr",
+    "url": "https://github.com/3imed-jaberi"
+  },
   "license": "MIT",
   "dependencies": {
     "faker": "^4.1.0",
-    "json-server": "^0.15.1"
+    "json-server": "^0.16.1"
   },
   "engines": {
-    "node": ">= 10.13.0",
-    "npm": ">= 6.11.2",
-    "yarn": ">= 1.16.0"
+    "node": ">= 10"
   },
   "bugs": {
     "url": "https://github.com/3imed-jaberi/fake-rest-json-api/issues"
