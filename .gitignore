@@ -1,9 +1,15 @@
-
-# dependencies
-/node_modules
-package-lock.json
-
-# misc
+#       OS        #
+###################
 .DS_Store
-.tmp
 .idea
+Thumbs.db
+tmp
+temp
+*.log
+
+
+#     Node.js     #
+###################
+node_modules
+package-lock.json
+yarn.lock
